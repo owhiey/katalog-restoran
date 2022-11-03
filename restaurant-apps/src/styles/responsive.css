@@ -1,0 +1,86 @@
+.cards {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+@media screen and (max-width: 499px) {
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        padding-top: 300px;
+        
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .header__inner {
+        padding-left: 1.3em;
+    }
+
+    .card-item {
+        height: fit-content;
+    }
+
+    .card-item__title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .header__menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        min-width: 1000px;
+    }
+    main {
+        max-width: 1200px;
+    }
+    .card-item {
+        height: 800px;
+    }
+}
