@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catalogue Restaurant Apps for you">
+  <meta name="theme-color" content="#15518d"/>
+  <link rel="icon" href="./favicon.png">
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
   
+  <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
   <title>Restaurant Apps Starter Project</title>
 </head>
 <body>
@@ -16,7 +22,7 @@
           <a href="/">Hungry Days</a>
         </h1>
       </div>
-      <button id="menu" class="header__menu">
+      <button id="hamburgerButton" class="header__menu">
         <span></span>
         <span></span>
         <span></span>
@@ -25,8 +31,8 @@
   
     <nav id="drawer" class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="/">Home</a></li>
-        <li class="nav__item"><a href="#">Favorite</a></li>
+        <li class="nav__item"><a href="#/list-restaurant">Home</a></li>
+        <li class="nav__item"><a href="#/like">Favorite</a></li>
         <li class="nav__item"><a href="https://web.facebook.com/dwi.setyawan.5688476">About Us</a></li>
       </ul>
     </nav>
@@ -40,11 +46,11 @@
     </div>
   </div>
 
-  <main>
+  <main id="maincontent" tabindex="0">
     <section class="content">
       <div class="expolre">
         <h1 class="expolore__label">Explore Restaurant</h1>
-        <div class="cards" id="maincontent">
+        <div class="cards">
           
         </div>
       </div>
