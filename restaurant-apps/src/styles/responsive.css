@@ -1,4 +1,4 @@
-.cards {
+.restaurants {
     display: grid;
     grid-row-gap: 10px;
 }
@@ -55,10 +55,13 @@
     .header__menu {
         display: none;
     }
+    .card-item__title {
+        font-size: 38px;
+    }
 }
 
 @media screen and (min-width: 700px) {
-    .cards {
+    .restaurants {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
@@ -67,7 +70,7 @@
 }
 
 @media screen and (min-width: 900px) {
-    .cards {
+    .restaurants {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
